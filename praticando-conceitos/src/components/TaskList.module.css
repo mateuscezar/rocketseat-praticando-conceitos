@@ -1,0 +1,125 @@
+.container {
+    margin-top: 4rem;
+    width: 46rem;
+    margin: 4rem auto;
+    padding: 0 0.5rem;
+}
+
+.container > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.createdTasks {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.createdTasks > span {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    color: var(--gray-200);
+    padding: 0.2rem 0.5rem;
+    background: var(--gray-500);
+    vertical-align: middle;
+    border-radius: 8px;
+    background: var(--gray-500, #262626);
+    box-shadow: 2px rgba(0, 0, 0, 0.25);
+}
+
+.completedTasks {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.completedTasks > span {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    color: var(--gray-200);
+    padding: 0.2rem 0.5rem;
+    background: var(--gray-500);
+    vertical-align: middle;
+    border-radius: 8px;
+    background: var(--gray-500, #262626);
+    box-shadow: 2px rgba(0, 0, 0, 0.25);
+}
+
+.listArea {
+    display: flex;
+    margin-top: 1.5rem;
+    padding: 4rem 1.5rem;
+    color: var(--gray-300);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.clearTasks {
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-300);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.itemContainer {
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-400, #333);
+    background: var(--gray-500, #262626);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.itemContent {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem;
+    text-align: justify;
+}
+
+.itemContent svg {
+    min-width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.25rem;
+}
+
+.checkContainer {
+    margin-top: 0rem;
+    min-width: 1.8rem;
+    height: 1.125rem;
+    background: none;
+    border: none;
+}
+
+.checkContainer div {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+}
+
+.checkContainer svg {
+    width: 100%;
+    height: 100%;
+    color: var(--purple);
+}
+
+.selected {
+    text-decoration: line-through;
+}
+
+.unselected {
+    text-decoration: none;
+}
